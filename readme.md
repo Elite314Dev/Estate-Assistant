@@ -19,13 +19,13 @@ Download VS Code or Editor of your choice
 ### Clone the Reposotry
 
 ```
-git clone https://github.com/RaheesAhmed/Ottavio.git
+git clone https://github.com/Elite314Dev/Estate-Assistant.git
 ```
 
 Go to the Folder
 
 ```
-cd ottavio
+cd Estate-Assistant
 ```
 
 ### create virtual Environment for python
@@ -62,15 +62,10 @@ pip install -U langchain-openai
 pip install -U langchain-community
 ```
 
-add JSON file named DB Test Assistant AI.json with the data for the real estate listings.
-
-```
-file_id = upload_file(client, "DB Test Assistant AI")
-```
 
 ### Run the Code
 
-To Run Assistant API Type
+To Run Assistant 
 
 ```
 python assistantapi.py
@@ -79,16 +74,6 @@ python assistantapi.py
 Enter your queries when prompted, and the assistant will provide summaries of real estate listings based on your input. Type 'exit' to end the conversation.
 
 Example Query:Enter your query (type 'exit' to end): I'm looking for a flat in Cannes around 400000€
-
-### you can also change the assistant instructions:
-
-```
-def create_assistant(client, file_id):
-    assistant = client.beta.assistants.create(
-        name="Ottavio",
-        instructions=f"""add your instruction here"""
-
-```
 
 # Run the filter data
 
